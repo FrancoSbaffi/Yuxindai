@@ -107,7 +107,7 @@ const Page = () => {
 
           <div className="project-content">
             <div className="img img-1" ref={firstImgRef}>
-              <img src="/portfolio/project-1.jpg" alt="" />
+              <img src="/portfolio/project-1.jpg" alt="project" />
             </div>
 
             <div className="copy">
@@ -128,11 +128,11 @@ const Page = () => {
             </div>
 
             <div className="img img-2" ref={(el) => (imgRefs.current[0] = el)}>
-              <img src="/portfolio/project-2.jpg" alt="" />
+              <img src="/portfolio/project-2.jpg" alt="project" />
             </div>
 
             <div className="img img-3" ref={(el) => (imgRefs.current[1] = el)}>
-              <img src="/portfolio/project-3.jpg" alt="" />
+              <img src="/portfolio/project-3.jpg" alt="project" />
             </div>
 
             <div className="copy">
@@ -152,10 +152,10 @@ const Page = () => {
             </div>
 
             <div className="img img-4" ref={(el) => (imgRefs.current[2] = el)}>
-              <img src="/portfolio/project-4.jpg" alt="" />
+              <img src="/portfolio/project-4.jpg" alt="project" />
             </div>
             <div className="img img-5" ref={(el) => (imgRefs.current[3] = el)}>
-              <img src="/portfolio/project-5.jpg" alt="" />
+              <img src="/portfolio/project-5.jpg" alt="project" />
             </div>
 
             <div className="copy">
@@ -174,7 +174,7 @@ const Page = () => {
             </div>
 
             <div className="img img-6" ref={(el) => (imgRefs.current[4] = el)}>
-              <img src="/portfolio/project-6.jpg" alt="" />
+              <img src="/portfolio/project-6.jpg" alt="project" />
             </div>
 
             <div className="next-project" ref={nextProjectRef}>

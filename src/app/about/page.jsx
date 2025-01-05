@@ -26,20 +26,22 @@ const AboutPage = () => {
     );
 
     const applySplitType = (element) => {
-      const splitTexts = element.querySelectorAll("h1, h2, h3");
-      splitTexts.forEach((text) => {
-        const split = new SplitType(text, {
-          types: "lines",
-          tagName: "span",
+      if (typeof window !== "undefined" && element) {
+        const splitTexts = element.querySelectorAll("h1, h2, h3");
+        splitTexts.forEach((text) => {
+          const split = new SplitType(text, {
+            types: "lines",
+            tagName: "span",
+          });
+    
+          split.lines.forEach((line) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "line-wrapper";
+            line.parentNode.insertBefore(wrapper, line);
+            wrapper.appendChild(line);
+          });
         });
-
-        split.lines.forEach((line) => {
-          const wrapper = document.createElement("div");
-          wrapper.className = "line-wrapper";
-          line.parentNode.insertBefore(wrapper, line);
-          wrapper.appendChild(line);
-        });
-      });
+      }
     };
 
     if (aboutCopyRef.current) {
